@@ -11,7 +11,7 @@ export default function Home() {
 		values.date  = moment(values.date).format('YYYY-MM-DD')
 		const data = await postData(values)
 		if (data.code === 200) {
-			message.success(data.message)
+			message.success("添加成功")
 		}	else {
 			message.error(data.message)
 		}
