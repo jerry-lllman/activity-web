@@ -4,7 +4,7 @@ export default async (url = '', data: RequestData = {}, type = 'GET') => {
   if (import.meta.env.DEV) {
     baseUrl = "/api"
   } else {
-    baseUrl = "http://110.40.153.135:8000"; // 基础路径
+    baseUrl = "https://api.hildxd.com"; // 基础路径
   }
   type = type.toUpperCase(); // 请求方式小写转换成大写
   url = baseUrl + url; // 请求地址的拼接

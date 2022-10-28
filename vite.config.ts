@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        target: "http://110.40.153.135:8000",
+        target: "https://api.hildxd.com",
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, ""),
       },
